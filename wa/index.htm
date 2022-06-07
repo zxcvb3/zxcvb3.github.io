@@ -13,6 +13,10 @@
     <script>
         const Webamp = window.Webamp;
         const webamp = new Webamp({
+		__initialWindowLayout: {
+                main: { position: { x: 0, y: 0 } },
+                playlist: { position: { x: 0, y: 232 }, size: [0, 4] }}
+            },
 			initialSkin: {
 			url: 'c64.wsz'
 			},
@@ -35,11 +39,7 @@
                     },
                     url: "llama-2.91.mp3",
                     duration: 5.322286
-                },
-            __initialWindowLayout: {
-                main: { position: { x: 0, y: 0 } },
-                playlist: { position: { x: 0, y: 232 }, size: [0, 4] }}
-            }
+                }
             ],
         });
 
