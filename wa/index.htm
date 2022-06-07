@@ -8,7 +8,11 @@ test
 <script src="webamp.bundle.js"></script>
 <script>
     const app = document.getElementById("app")
-    const webamp = new Webamp();
+    const webamp = new Webamp({
+			initialSkin: {
+			url: 'c64.wsz'
+			}
+	);
     webamp.renderWhenReady(app);
 </script>
 test
